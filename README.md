@@ -1,3 +1,3 @@
-# goit-markup-hw-07
+# goit-markup-hw-06
 
-Home work mod7
+Home work mod6
