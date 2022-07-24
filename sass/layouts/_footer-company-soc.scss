@@ -1,0 +1,27 @@
+.company-socials {
+  margin-left: 70px;
+}
+
+.company-socials__list {
+  display: flex;
+}
+.company-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+.company-socials__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--header-bgd-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--link-selection-solor);
+  }
+}
+
+.company-socials__icon {
+  fill: currentColor;
+}

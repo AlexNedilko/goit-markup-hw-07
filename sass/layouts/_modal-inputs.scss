@@ -1,0 +1,125 @@
+.modal-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.input-label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+.input-field {
+  position: relative;
+  margin-bottom: 10px;
+  color: var(--title-color);
+
+  &:focus-within {
+    color: var(--link-selection-solor);
+  }
+}
+
+.modal-input {
+  width: 100%;
+  padding-left: 42px;
+  height: 40px;
+  color: var(--title-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: color var(--animation-timing-function),
+    border-color var(--animation-timing-function);
+
+  &:focus {
+    border-color: var(--link-selection-solor);
+    outline: none;
+  }
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  transform: translate(-50%, -50%);
+  fill: currentColor;
+}
+
+.modal-input.coment {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  height: 120px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+
+  &:placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.check-box {
+  position: absolute;
+
+  &:checked ~ .icon-checked {
+    opacity: 1;
+  }
+  &:checked ~ .icon-unchecked {
+    opacity: 0;
+  }
+}
+.accept {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+}
+.custom-box {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  //   outline: 1px solid red;
+}
+.icon-unchecked {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: opacity var(--animation-timing-function);
+}
+.icon-checked {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity var(--animation-timing-function);
+}
+
+.police-accept {
+  display: inline-block;
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.accept-accent {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--link-selection-solor);
+}
+.subscribe-btn.send {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
